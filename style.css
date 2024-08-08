@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 1em 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    padding: 0 1em; 
+    background-color: black;
+    color: white;
+}
+
+.hero, .hero1, .template{
+    width:  100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 4em 0  ;
+}
+
+.template{
+    padding: 7em 0;
+    background-image: url('./images/bloomberg.jpg');
+    background-size: cover;
+}
+.hero, .hero1 p{
+    margin-top: 0;
+}
+
+nav, .holder{
+    width: 95%;
+    display: flex;
+    padding: 1em 10px;
+    justify-content: space-between;
+}
+
+nav{
+    align-items: center;
+}
+
+h5{
+    font-size: 2em;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-self:last baseline;
+}
+
+nav ul li{
+    padding: 0 10px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover{
+    color: orangered;
+}
+
+h1{
+    font-size: 4em;
+    margin: 0;
+}
+
+h1 span{
+    font-size: 1.5em;
+}
+
+.container div{
+    margin: 15px;
+    color: white;
+}
+
+.container div a{
+    color: white;
+    font-size: 10px;
+}
+
+button{
+    padding: 10px 6px;
+    margin-right: 5px;
+}
+
+h2{
+    font-size: 3em;
+    margin-bottom: .5em;
+}
+
+
+.holder{
+    width: 100%;
+    margin: 1em 0;
+    align-self: center;
+
+}
+
+a{
+    margin: 0 5px;
+    color: white;
+    font-size: 10px;
+}
+
+.card{
+    width: 200px;
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.card h3{
+    font-size: 20px;
+}
+
+.hero1{
+    flex-direction: row;
+}
+
+.hero1 h2{
+    margin: 0;
+}
+.leftcard{
+    width: 70%;
+}
+
+.grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.label, .label a{
+    font-size: 11px;
+}
+
+form input{
+    padding: 1em;
+}
+
+form h3{
+    font-size: 2em;
+    margin: 0;
+}
+
+footer{
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    color: black;
+    background-color: white;
+}
+
+img{
+    width: 70px;
+    height: 70px;
+}
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+    nav, .holder, .grid{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    nav{
+        margin: 0;
+        padding: 0;
+    }
+    h5{
+        font-size: 1em;
+    }
+    nav ul li a{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+
+    .hero1{
+        flex-direction: column;
+    }
+
+    .leftcard{
+        width: 100%;
+    }
+
+    .rightcard{
+        width: 100%;
+    }
+
+    form{
+        align-self: center;
+        justify-self: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    footer{
+        width: 100%;
+        display: flex;
+        color: white;
+        background-color: transparent;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    footer a{
+        margin: 0;
+        padding: 0;
+    }
+}
